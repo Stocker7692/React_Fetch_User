@@ -1,7 +1,7 @@
 import './App.css';
 import {Navbar, Nav, NavDropdown, Form, FormControl, Button, Card, Container, Row} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {useEffect, useState} from 'react'
+import {useState} from 'react'
 import axios from 'axios';
 import Loader from 'react-loader-spinner';;
 function App() {
@@ -84,7 +84,7 @@ const getUsers= async() => {
     <Container>
     <Row>
       {users.map((value, index) => {
-      return <Card style={{ width: '18rem' },{ margin: '1rem' }}>
+      return <Card style={{ width: '18rem' ,margin: '1rem' }}>
         <Card.Img variant="top" src={value.avatar} />
         <Card.Body>
           <Card.Title>{value.first_name} {value.last_name}</Card.Title>
