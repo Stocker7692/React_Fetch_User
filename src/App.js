@@ -82,7 +82,8 @@ const getUsers= async() => {
     
     {/* LAYOUT */}
     <Container>
-    <Row>
+
+    <Row style={{justifyContent:'center'}}>
       {users.map((value, index) => {
       return <Card style={{ width: '18rem' ,margin: '1rem' }}>
         <Card.Img variant="top" src={value.avatar} />
